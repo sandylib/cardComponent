@@ -1,0 +1,40 @@
+.composite{
+    
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-size: cover;
+    width:350px;
+    margin-left: auto;
+    margin-right: auto;   
+    min-height: 250px;
+    position: relative;  
+}
+
+.footer{
+    width:100%;  
+     display:table-row;    
+    position: absolute;    
+    bottom: 0px;
+}
+.footer img{
+    height: 75px;
+}
+.footer ul {
+    list-style-type: none;
+    background: rgba(0, 0,0, 0.6);
+    padding:0;
+    margin: 0;
+    vertical-align: center;
+}
+.footer ul li{
+   display: table-cell;
+    list-style-type: none;
+         
+            vertical-align: middle;
+    font-size: 25px;
+    color: white;
+    line-height: 18px;
+   
+}
+
+
