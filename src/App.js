@@ -1,10 +1,20 @@
 import React, { Component} from 'react';
 
 import styled from 'styled-components';
+import myImage from './assets/tile.jpg';
 
+const ImageBackgroundWarp = styled.div`
+    background-image: url(${myImage});
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-size: cover;
+    width:350px;
+    margin-left: auto;
+    margin-right: auto;   
+    min-height: 250px;
+    position: relative;  
+`;
 
-import Background from './assets/tile.jpg';
-import BackgroundImage from './ImageBackgroundLoaderComponent';
 const Logo = styled.img`
     height:75px;
 `;
@@ -33,14 +43,13 @@ const Logo = styled.img`
 class App extends Component {
   render() {
     return (
-      <BackgroundImage src={require('./assets/tile.jpg')}  className="composite">  
-          
+      <ImageBackgroundWarp>  
               <Mask>             
-                  <Item><Logo src={require('./assets/logo.png')} className="logo" alt="logo" /></Item>
+                  <Item><Logo src={require('./assets/logo.png')}  alt="logo" /></Item>
                   <Item>Home And Away</Item>
              </Mask>
           
-        </BackgroundImage>
+        </ImageBackgroundWarp>
     );
   }
 }
