@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 
-const Compix = styled.div`
+const Composite = styled.div`
     background-repeat: no-repeat;
     background-position: center;  
     background-size: cover;
@@ -77,9 +77,9 @@ export default class BackgroundLoader extends React.Component {
     const source = !this.state.loaded || this.state.error ? placeholder : src;
 
     return (
-      <Compix style={{backgroundImage: `url(${source})`}} {...props}>
+      <Composite style={{backgroundImage: `url(${source})`}} {...props}>
         {children}
-      </Compix>
+      </Composite>
     );
   }
 }

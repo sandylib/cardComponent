@@ -2,9 +2,9 @@ import React, { Component} from 'react';
 
 import styled from 'styled-components';
 
-import './App.css';
+
 import Background from './assets/tile.jpg';
-import BackgroundImage from './ImageBackgroundLoaderComponent';//'react-background-image-loader';
+import BackgroundImage from './ImageBackgroundLoaderComponent';
 const Logo = styled.img`
     height:75px;
 `;
