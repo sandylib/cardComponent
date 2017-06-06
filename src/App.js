@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 
 import styled from 'styled-components';
-
+import './themes/globleStyles';
 
 import BackgroundImg from './assets/tile.jpg';
 import ImageBackgroundWarp from './ImageBackgroundLoaderComponent';
@@ -11,7 +11,7 @@ const Logo = styled.img`
 `;
 
  const Mask = styled.ul`
-    width:100%;  
+     width:100%;  
      display:table-row;    
      position: absolute;    
      bottom: 0;
@@ -26,14 +26,15 @@ const Logo = styled.img`
     display: table-cell;
     list-style-type: none;
     vertical-align: middle;
-    font-size: 25px;
+    font-size: 1.8em;
     color: white;
-    line-height: 18px;
+    line-height: 1.8em;
+    font-family: 'Roboto', sans-serif;
  `;
 
 class App extends Component {
   render() {
-    return (
+    return (      
       <ImageBackgroundWarp src={require('./assets/tile.jpg')}>  
           
               <Mask>             
